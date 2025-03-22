@@ -10,7 +10,6 @@ class Program
         int number =5;
         number = 8;
 
-        string color = "blue";
 
         if (number > 3)
         {
