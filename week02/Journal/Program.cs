@@ -1,8 +1,16 @@
+//Pretty proud of how this coding project went haha! The program asks you a 
+//few questions, and gives you an oppurtunity to write down any other notes
+//you may want in your journal entry. PREREQUISITE: You must have a folder
+//named "Journal Entries" on your Desktop.
+
+
 using System;
 using System.IO;
 
 class Program
 {
+    // Note for anyone testing this code:
+    // Your Journal Entry will save to a folder named "Entries" on your Desktop
     static void Main(string[] args)
     {
         Entry entry1 = new Entry();
@@ -34,12 +42,23 @@ class Program
         Console.Write("What is one thing you would have done over?: ");
         entry1._doOver = Console.ReadLine();
 
+        Console.Write("What is at least one goal you have for tomorrow?: ");
+        entry1._tomorrowGoal = Console.ReadLine();
+
+        Console.Write("Extra: ");
+        entry1._anythingElse = Console.ReadLine();
+
         entry1.Display();
 
-        // I decided to add a place to store my Journal entries (I had to look a lot of stuff up for this one)
-        string fileName = Path.Combine("Entries", $"JournalEntry_{DateTime.Now:yyyyMMdd_HHmmss}_{DateTime.Now:MMMM_dd_yyyy}.txt");
-        Directory.CreateDirectory("Entries");
+        // I decided to add a place to store my Journal entries in the folder" Journal Entries" on my desktop
+        // (I had to look a lot of stuff up for this one)
+        string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
 
+        string folderPath = Path.Combine(desktopPath, "Journal Entries");
+        Directory.CreateDirectory(folderPath);
+
+        // Makes a new file in the "Journal Entries" folder on the Desktop
+        string fileName = Path.Combine(folderPath, $"JournalEntry_{DateTime.Now:yyyyMMdd_HHmmss}_{DateTime.Now:MMMM_dd_yyyy}.txt");
         File.WriteAllText(fileName, $"Journal Entry:\n"
                             + $"Interesting Person: {entry1._interestingPerson}\n"
                             + $"Concentration Score: {entry1._concentrationScore}\n"
@@ -47,6 +66,8 @@ class Program
                             + $"The Lord's Hand: {entry1._theLordsHand}\n"
                             + $"Strongest Emotion: {entry1._strongestEmotion}\n"
                             + $"Do Over: {entry1._doOver}\n"
+                            + $"Goal(s) for tomorrow: {entry1._tomorrowGoal}\n"
+                            + $"Anything Else: {entry1._anythingElse}\n"
                             + $"Date: {DateTime.Now:MMMM dd, yyyy}\n");
     }
 }

@@ -8,6 +8,7 @@ public class Entry
     public string _theLordsHand;
     public string _strongestEmotion;
     public string _doOver;
+    public string _tomorrowGoal;
     public string _anythingElse;
 
     public void Display()
