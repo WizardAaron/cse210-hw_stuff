@@ -15,7 +15,7 @@ public class Entry
     {
         Console.WriteLine($"Your Journal Entry:");
         Console.WriteLine($"One interesting person I interacted with: {_interestingPerson}");
-        Console.WriteLine($"Concentration Score: {_concentrationScore}");
+        Console.WriteLine($"Concentration Score: {_concentrationScore}/10");
         Console.WriteLine($"Best part of the day: {_bestPart}");
         Console.WriteLine($"How I saw the Lord's hand in my life today: {_theLordsHand}");
         Console.WriteLine($"Strongest emotion I felt today: {_strongestEmotion}");

@@ -2,6 +2,8 @@
 //few questions, and gives you an oppurtunity to write down any other notes
 //you may want in your journal entry. PREREQUISITE: You must have a folder
 //named "Journal Entries" on your Desktop.
+//Note: I found out that saving the file doesn't work from the browser, you
+//must use VScode or something of the sort.
 
 
 using System;
@@ -28,23 +30,28 @@ class Program
             switch (choice)
             {
                 case "1": // Write
+                    Console.WriteLine(" ");
                     WriteEntry(currentEntry);
                     break;
 
                 case "2": // Display
+                    Console.WriteLine(" ");
                     currentEntry.Display();
                     break;
 
                 case "3": // Load
+                Console.WriteLine(" ");
                     LoadEntry(currentEntry);
                     break;
 
                 case "4": // Save
+                    Console.WriteLine(" ");
                     SaveEntry(currentEntry);
                     break;
 
                 case "5": // Quit
                     running = false;
+                    Console.WriteLine(" ");
                     Console.WriteLine("Goodbye!");
                     break;
 
