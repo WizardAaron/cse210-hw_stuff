@@ -1,5 +1,12 @@
 using System;
-
+/// <summary>
+/// This Program takes a scripture (In this case, 1 Nephi 3:6-7), and 
+/// displays it in the terminal. The purpose of this program is to help the
+/// user memorize this scripture. Pressing Enter will make 3 words 'dissapear'
+// (or more accurately it will replace each of the words with underscores),
+/// and typing 'quit' will end the program early. The Program will 
+/// automatically terminate if all of the words are hidden.
+/// </summary>
 class Program
 {
     static void Main()
