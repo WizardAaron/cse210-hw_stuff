@@ -38,6 +38,7 @@ class Program
         // Prints video info
         foreach (var video in youtube.GetVideos())
         {
+            Console.WriteLine();
             Console.WriteLine($"Title: {video.Title}");
             Console.WriteLine($"Author: {video.Author}");
             Console.WriteLine($"Length: {video.Length}");
