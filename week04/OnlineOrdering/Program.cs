@@ -38,7 +38,7 @@ class Program
         Console.WriteLine();
         Console.WriteLine();
         Console.WriteLine($"Customer Name: {customer.CustomerName}");
-        Console.WriteLine($"Address: {address1.StreetAddress}, {address1.City}, {address1.State}, {address1.Country}");
+        Console.WriteLine($"Address:\n{address1.StreetAddress}\n{address1.City}, {address1.State}\n{address1.Country}");
         Console.WriteLine();
 
         // Prints details for the first order
