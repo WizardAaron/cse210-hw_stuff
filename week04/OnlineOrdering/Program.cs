@@ -56,9 +56,9 @@ class Program
         {
             Console.WriteLine($"Product Name: {product.ProductName}");
             Console.WriteLine($"--Product ID: {product.ProductID}");
-            Console.WriteLine($"--Price Per Product: {product.Price}");
+            Console.WriteLine($"--Price Per Product: ${product.Price}");
             Console.WriteLine($"--Amount Purchased: {product.Quantity}");
-            Console.WriteLine($"Total Price of Product: {product.TotalProductPrice}");
+            Console.WriteLine($"Total Price of Product: ${product.TotalProductPrice}");
         }
         Console.WriteLine(order1.GetSummary(address1));
         Console.WriteLine();
@@ -69,9 +69,9 @@ class Program
         {
             Console.WriteLine($"Product Name: {product.ProductName}");
             Console.WriteLine($"--Product ID: {product.ProductID}");
-            Console.WriteLine($"--Price Per Product: {product.Price}");
+            Console.WriteLine($"--Price Per Product: ${product.Price}");
             Console.WriteLine($"--Amount Purchased: {product.Quantity}");
-            Console.WriteLine($"Total Price of Product: {product.TotalProductPrice}");
+            Console.WriteLine($"Total Price of Product: ${product.TotalProductPrice}");
         }
         Console.WriteLine(order2.GetSummary(address1));
     }
