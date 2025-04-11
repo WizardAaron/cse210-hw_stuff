@@ -39,6 +39,15 @@ class Program
         Console.WriteLine();
         Console.WriteLine($"Customer Name: {customer.CustomerName}");
         Console.WriteLine($"Address:\n{address1.StreetAddress}\n{address1.City}, {address1.State}\n{address1.Country}");
+        // Print whether the order was made in the United States
+        if (address1.Country == "United States")
+        {
+            Console.WriteLine($"{customer.CustomerName} lives in the United States, so shipping cost is $5.");
+        }
+        else
+        {
+            Console.WriteLine($"{customer.CustomerName} does NOT live in the United States, so shipping cost is $35.");
+        }
         Console.WriteLine();
 
         // Prints details for the first order
