@@ -27,6 +27,7 @@ class Program
         video4.AddComment("3:52 the creeper is just reverted back to its original form");
         video4.AddComment("What we want: Gracefully weathered,wax-sealed weatherd copper door of the lasting castle What majang gave us: chiseled copper");
         video4.AddComment("Bro turns the merch ad into a full movie");
+        video4.AddComment("9:04 Oh good I was hoping Knarfy would invent cement shoes today");
 
         // Adds the videos to YouTube
         youtube.AddVideo(video1);
