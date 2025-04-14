@@ -15,7 +15,7 @@ public class Assignment
     // Method to get the summary
     public string GetSummary()
     {
-        return $"{_studentName}, {_topic}";
+        return $"{_studentName} - {_topic}";
     }
 
     // Public getter for the student's name
@@ -23,4 +23,9 @@ public class Assignment
     {
         return _studentName;
     }
+    public string GetTopic()
+    {
+        return _topic;
+    }
+    
 }
