@@ -4,15 +4,20 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Test WritingAssignment class
-        WritingAssignment writingAssignment = new WritingAssignment("Mary Waters", "European History", "The Causes of World War II");
+        // Create a base "Assignment" object
+        Assignment a1 = new Assignment("Samuel Bennett", "Multiplication");
+        Console.WriteLine(a1.GetSummary());
+        Console.WriteLine("");
 
-        // Call GetSummary method
-        string summary = writingAssignment.GetSummary();
-        Console.WriteLine(summary);
+        // Now create the derived class assignments
+        MathAssignment a2 = new MathAssignment("Roberto Rodriguez", "Fractions", "7.3", "8-19");
+        Console.WriteLine(a2.GetSummary());
+        Console.WriteLine(a2.GetHomeworkList());
+        Console.WriteLine("");
 
-        // Call GetWritingInformation method
-        string writingInfo = writingAssignment.GetWritingInformation();
-        Console.WriteLine(writingInfo);
+        WritingAssignment a3 = new WritingAssignment("Mary Waters", "European History", "The Causes of World War II");
+        Console.WriteLine(a3.GetSummary());
+        Console.WriteLine(a3.GetWritingInformation());
+        Console.WriteLine("");
     }
 }
