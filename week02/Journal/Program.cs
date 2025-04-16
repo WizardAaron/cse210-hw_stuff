@@ -2,7 +2,8 @@
 // few questions, and gives you an opportunity to write down any other notes
 // you may want in your journal entry. PREREQUISITE: You must have a folder
 // named "Journal Entries" on your Desktop.
-// Note: I found out that saving the file doesn't work from the browser, you
+
+// IMPORTANT: I found out that saving the file doesn't work from the browser, you
 // must use VS Code or something of the sort.
 
 using System;
